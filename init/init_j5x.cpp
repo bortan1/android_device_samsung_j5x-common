@@ -37,6 +37,11 @@ void init_target_properties(void)
 	/* get the bootloader string */
 	std::string bootloader = android::base::GetProperty("ro.bootloader", "");
 
+	if (bootloader.find("J510H") == 0) {
+                device = (char *)"j5xn3g";
+                model = (char *)"SM-J510H";
+                set_gsm_properties();
+	}
 	if (bootloader.find("J510FN") == 0) {
                 device = (char *)"j5xnlte";
                 model = (char *)"SM-J510FN";
