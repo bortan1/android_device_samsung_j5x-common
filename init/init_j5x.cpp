@@ -42,6 +42,11 @@ void init_target_properties(void)
                 model = (char *)"SM-J510FN";
                 set_lte_properties();
 	}
+	else if (bootloader.find("J510H") == 0) {
+	device = (char *)"j5xn3g";
+	model = (char *)"SM-J510H";
+	set_gsm_properties();
+	}
 	else if (bootloader.find("J510F") == 0) {
 		device = (char *)"j5xlte";
 		model = (char *)"SM-J510F";
