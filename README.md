@@ -7,7 +7,7 @@ Basic   | Spec Sheet
 CPU     | Qualcomm MSM8916/MSM8216 Quad-core 1.2 GHz ARM® Cortex™ A53
 CHIPSET | Qualcomm MSM8916 Snapdragon 410
 GPU     | Adreno 306
-Memory  | 1.5 GB
+Memory  | 2 GB
 Shipped Android Version | 6.0.1/7.1.1
 Storage | 16 GB
 MicroSD | Up to 256 GB
