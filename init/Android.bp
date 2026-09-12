@@ -15,12 +15,23 @@
 //
 
 
+
 cc_library_static {
     name: "libinit_j5x",
+
+    srcs: [
+        "init_j5x.cpp",
+    ],
+
     recovery_available: true,
-    srcs: ["init_j5x.cpp"],
-    include_dirs: [
-        "system/core/base/include",
-        "system/core/init",
-    ]
+
+    shared_libs: [
+        "libbase",
+        "liblog",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+    ],
 }
